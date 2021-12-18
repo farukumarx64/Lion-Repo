@@ -43,3 +43,7 @@
     transition: 350ms ease-in;
     border-radius: 5px;
 }
+
+.text_box {
+    resize: none;
+}
