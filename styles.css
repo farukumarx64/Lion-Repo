@@ -18,21 +18,21 @@ body {
 .search__container {
     display: inline-block;
     margin: auto;
-    padding-top: 64px;
-    top: 300px;
     left: 200px;
     width: 500px;
     position: relative;
-    top: 150px;
+    vertical-align: middle;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
-.search__title {
-    font-size: 45px;
+.search__content {
+    font-size: 29px;
     font-weight: 900;
     text-align: center;
-    color: #0b0335;
+    bottom: 5px;
+    color: whitesmoke;
     position: relative;
 }
 
@@ -43,24 +43,21 @@ body {
     transition: transform 250ms ease-in-out;
     font-size: 14px;
     line-height: 18px;
-    color: #575756;
+    color: whitesmoke;
     background-color: transparent;
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 95% center;
     border-radius: 50px;
-    border: 1px solid #575756;
+    border: 1px solid whitesmoke;
     transition: all 250ms ease-in-out;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
 
-.search__input:placeholder {
-    color: color(#575756 a(0.8));
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+.search__input::placeholder {
+    color: whitesmoke;
 }
 
 .search__input:hover,
@@ -68,44 +65,24 @@ body {
     padding: 12px 0;
     outline: 0;
     border: 1px solid transparent;
-    border-bottom: 1px solid #575756;
+    border-bottom: 1px solid white;
     border-radius: 0;
     background-position: 100% center;
-    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 10px 10px 2px 1px whitesmoke;
 }
 
 .credits__container {
     margin-top: 24px;
 }
 
-.credits__text {
-    text-align: center;
-    font-size: 13px;
-    line-height: 18px;
-    position: relative;
-    top: 150px;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-.credits__link {
-    color: #ff8b88;
-    text-decoration: none;
-    transition: color 250ms ease-in;
-}
-
-.credits__link:hover,
-.credits__link:focus {
-    color: color(#ff8b88 blackness(+25%));
-}
-
 .options_menu p {
     color: black;
     float: right;
     vertical-align: top;
+    margin-top: 27.5px;
     border: 1px solid black;
     padding: 3px;
-    top: -5px;
+    bottom: 35px;
     position: relative;
     margin-left: 10px;
 }
@@ -123,4 +100,26 @@ body {
     box-shadow: 5px 5px 2px 1px rgba(255, 238, 0, 0.678);
     transition: 350ms ease-in;
     border-radius: 5px;
+}
+
+.web__title {
+    position: relative;
+    float: top;
+    display: flex;
+    left: 10px;
+    bottom: 12.5px;
+    font-size: 40px;
+    font-weight: 900;
+    bottom: 20px;
+    color: #0b0335;
+}
+
+.search__box {
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-image: url(./images/proto.jpg);
 }
